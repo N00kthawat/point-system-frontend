@@ -1,0 +1,70 @@
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    bottom: 10;
+    width: 50%;
+    color: white;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+
+.app-container {
+    padding-bottom: 50px; 
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    min-height: 300px; /* กำหนดความสูงขั้นต่ำ */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}

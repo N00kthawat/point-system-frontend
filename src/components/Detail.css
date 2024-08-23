@@ -1,0 +1,144 @@
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    bottom: 10;
+    width: 50%;
+    color: white;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+
+
+.app-container {
+    padding-bottom: 50px; /* Height of the BottomNav */
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.content-2 {
+    display: flex;
+    justify-content: center; /* จัดแนวกลางแนวนอน */
+    align-items: center;     /* จัดแนวกลางแนวตั้ง */
+    height: 100vh;           /* ใช้ความสูงเต็มหน้าจอ */
+}
+
+.product-card {
+    text-align: left;  /* จัดแนวข้อความชิดซ้าย */
+    border: 1px solid #ddd;  /* เพิ่มขอบให้กับการ์ด */
+    padding: 20px;           /* เพิ่มระยะห่างภายในการ์ด */
+    border-radius: 8px;      /* เพิ่มขอบมนให้กับการ์ด */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* เพิ่มเงาให้กับการ์ด */
+    max-width: 500px;         /* จำกัดความกว้างของการ์ด */
+    margin: auto;            /* จัดการ์ดให้อยู่กลาง */
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-title {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.points-container {
+    text-align: right;       /* จัดข้อความภายในคอนเทนเนอร์ไปที่ขวา */
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+.product-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.redeem-button {
+    margin-right: auto; 
+}
+
+.product-title {
+    text-align: center;
+}
+
+.product-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.product-expiry-date {
+    text-align: center;
+}
+
+
+
+
+
+.redeem-button {
+    background-color: #ffb062; /* สีพื้นหลังของปุ่ม */
+    border: none; /* ไม่มีขอบ */
+    color: white; /* สีตัวหนังสือ */
+    padding: 15px 32px; /* ขนาดของปุ่ม */
+    text-align: center; /* จัดตำแหน่งข้อความให้อยู่กลาง */
+    text-decoration: none; /* ลบเส้นใต้ข้อความ */
+    display: inline-block; /* ทำให้ปุ่มเป็นบล็อกแบบอินไลน์ */
+    font-size: 16px; /* ขนาดตัวหนังสือ */
+    margin: 4px 2px; /* ระยะห่างของปุ่ม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นมือเมื่อชี้ไปที่ปุ่ม */
+    border-radius: 8px; /* มุมปุ่มกลม */
+    transition: background-color 0.3s ease; /* การเปลี่ยนสีพื้นหลังอย่างนุ่มนวลเมื่อโฮเวอร์ */
+}
+
+.redeem-button:hover {
+    background-color: #ff9d00; /* เปลี่ยนสีพื้นหลังเมื่อโฮเวอร์ */
+}
+
+.redeem-button:disabled {
+    background-color: #e7e7e7; /* สีพื้นหลังเมื่อปุ่มถูกปิดใช้งาน */
+    color: #c4c4c4; /* สีตัวหนังสือเมื่อปุ่มถูกปิดใช้งาน */
+    cursor: not-allowed; /* เปลี่ยนเคอร์เซอร์เป็นไม่อนุญาต */
+}
